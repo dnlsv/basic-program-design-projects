@@ -1,0 +1,5 @@
+﻿  Main.cpp
+d:\my\универ\окп\c++\с р\project1\project1\main.cpp(7): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+d:\my\универ\окп\c++\с р\project1\project1\main.cpp(10): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+d:\my\универ\окп\c++\с р\project1\project1\main.cpp(134): warning C4101: t: неиспользованная локальная переменная
+  Project1.vcxproj -> D:\My\Универ\ОКП\C++\С Р\Project1\Debug\Project1.exe

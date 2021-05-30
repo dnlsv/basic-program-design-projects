@@ -1,0 +1,4 @@
+﻿  Main.cpp
+d:\my\универ\окп\c++\lesson 5\trenning\trenning\main.cpp(8): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+d:\my\универ\окп\c++\lesson 5\trenning\trenning\main.cpp(13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Trenning.vcxproj -> D:\My\Универ\ОКП\C++\Lesson 5\Trenning\Debug\Trenning.exe
