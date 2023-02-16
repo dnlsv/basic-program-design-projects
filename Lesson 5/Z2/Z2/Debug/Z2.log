@@ -1,5 +1,0 @@
-﻿  Main.cpp
-d:\my\универ\окп\c++\lesson 5\z2\z2\main.cpp(7): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-d:\my\универ\окп\c++\lesson 5\z2\z2\main.cpp(13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-d:\my\универ\окп\c++\lesson 5\z2\z2\main.cpp(45): warning C4101: w: неиспользованная локальная переменная
-  Z2.vcxproj -> D:\My\Универ\ОКП\C++\Lesson 5\Z2\Debug\Z2.exe
