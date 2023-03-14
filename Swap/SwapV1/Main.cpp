@@ -1,18 +1,19 @@
 #include <iostream>
 
 using namespace std;
+
 int main()
 {
-	setlocale(LC_ALL, "rus");
-	double a, b, c;
-	cout << " Ââåäèòå a = ";
-	cin >> a;
-	cout << " Ââåäèòå b = ";
-	cin >> b;
-	c = a;
-	a = b;
-	b = c;
-	cout << " Íîâîå çíà÷åíèå a = " << a << endl;
-	cout << " Íîâîå çíà÷åíèå b = " << b << endl;
-	system("pause");
+    setlocale(LC_ALL, ".UTF8");
+    double a, b, c;
+    cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ a = ";
+    cin >> a;
+    cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ b = ";
+    cin >> b;
+    c = a;
+    a = b;
+    b = c;
+    cout << " ÐÐ¾Ð²Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ a = " << a << endl;
+    cout << " ÐÐ¾Ð²Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ b = " << b << endl;
+    system("pause");
 }

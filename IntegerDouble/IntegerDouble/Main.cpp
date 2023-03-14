@@ -1,20 +1,21 @@
 #include <iostream>
 
 using namespace std;
+
 int main()
 {
-	setlocale(LC_ALL, "rus");
-	double a;
-	cin >> a;
-	if (a == int(a))
-	{
-		cout << "Öåëîå";
-	}
-	else
-	{
-		cout << "Âåùåñòâåííîå";
-	}
-	cout << endl;
-	system("pause");
-	return 0;
+    setlocale(LC_ALL, ".UTF8");
+    double a;
+    cin >> a;
+    if (a == int(a))
+    {
+        cout << "Ð¦ÐµÐ»Ð¾Ðµ";
+    }
+    else
+    {
+        cout << "Ð’ÐµÑ‰ÐµÑÑ‚Ð²ÐµÐ½Ð½Ð¾Ðµ";
+    }
+    cout << endl;
+    system("pause");
+    return 0;
 }

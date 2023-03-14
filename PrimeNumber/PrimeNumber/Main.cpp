@@ -1,21 +1,22 @@
 #include <iostream>
+
 using namespace std;
 
 void main()
 {
-	setlocale(LC_ALL, "rus");
-	int number;
-	cout << "Ââåäèòå ÷èñëî" << endl;
-	cin >> number;
-	int i = 2;
-	bool flag = true;
-	while (i <= sqrt(number) && flag)
-	{
-		if (number%i == 0) flag = false;
-		i++;
-	}
-	if (number == 1) cout << "1 - íè ïðîñòîå, íè ñîñòàâíîå" << endl;
-	else if (flag) cout << "Ïðîñòîå"<<endl;
-	else cout << "Ñîñòàâíîå" << endl;
-	system("pause");
+    setlocale(LC_ALL, ".UTF8");
+    int number;
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾" << endl;
+    cin >> number;
+    int i = 2;
+    bool flag = true;
+    while (i <= sqrt(number) && flag)
+    {
+        if (number % i == 0) flag = false;
+        i++;
+    }
+    if (number == 1) cout << "1 - Ð½Ð¸ Ð¿Ñ€Ð¾ÑÑ‚Ð¾Ðµ, Ð½Ð¸ ÑÐ¾ÑÑ‚Ð°Ð²Ð½Ð¾Ðµ" << endl;
+    else if (flag) cout << "ÐŸÑ€Ð¾ÑÑ‚Ð¾Ðµ" << endl;
+    else cout << "Ð¡Ð¾ÑÑ‚Ð°Ð²Ð½Ð¾Ðµ" << endl;
+    system("pause");
 }

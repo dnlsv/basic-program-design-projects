@@ -3,76 +3,77 @@
 #include <ctime>
 
 using namespace std;
- 
+
 void main()
 {
-	setlocale(LC_ALL, "rus");
-	//1
-	int a, b;
-	cin >> a >> b;
-	srand(time(NULL));
-	int secret_number = rand() % (b - a + 1) + a;  //int number = rand() % (b-a+1)+a;
-	cout << "Ââåäèòå ÷èñëî" << endl;
-	int number;
-	int j = 0;
-	do {
-		cin >> number;
-		j++;
-		if (number > b || number < a) {
-			cout << "Íåâåğíûé ââîä" << endl;
-		}
-		else {
-			if (secret_number > number) {
-				cout << "Çàãàäàííîå áîëüøå" << endl;
-			}
-			else if (secret_number < number) {
-				cout << "Çàãàäàííîå ìåíüøå" << endl;
-			}
-		}
-	} while (secret_number != number);
-	cout << "Âû óãàäàëè!" << endl;
-	cout << "Êîëè÷åòñâî ïîïûòîê = " << j << endl;
-	 
+    setlocale(LC_ALL, ".UTF8");
 
-	//2
-	int num;
-	num = secret_number;
+    //1
+    int a, b;
+    cin >> a >> b;
+    srand(time(NULL));
+    int secret_number = rand() % (b - a + 1) + a;  //int number = rand() % (b-a+1)+a;
+    cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾" << endl;
+    int number;
+    int j = 0;
+    do {
+        cin >> number;
+        j++;
+        if (number > b || number < a) {
+            cout << "ĞĞµĞ²ĞµÑ€Ğ½Ñ‹Ğ¹ Ğ²Ğ²Ğ¾Ğ´" << endl;
+        }
+        else {
+            if (secret_number > number) {
+                cout << "Ğ—Ğ°Ğ³Ğ°Ğ´Ğ°Ğ½Ğ½Ğ¾Ğµ Ğ±Ğ¾Ğ»ÑŒÑˆĞµ" << endl;
+            }
+            else if (secret_number < number) {
+                cout << "Ğ—Ğ°Ğ³Ğ°Ğ´Ğ°Ğ½Ğ½Ğ¾Ğµ Ğ¼ĞµĞ½ÑŒÑˆĞµ" << endl;
+            }
+        }
+    } while (secret_number != number);
+    cout << "Ğ’Ñ‹ ÑƒĞ³Ğ°Ğ´Ğ°Ğ»Ğ¸!" << endl;
+    cout << "ĞšĞ¾Ğ»Ğ¸Ñ‡ĞµÑ‚ÑĞ²Ğ¾ Ğ¿Ğ¾Ğ¿Ñ‹Ñ‚Ğ¾Ğº = " << j << endl;
 
-	int sum = 0;
-	while (secret_number != 0) {
-		sum = sum + (secret_number % 10);                                                                  
-		secret_number = secret_number / 10;
-	} 
-	cout << "Ñóììà öèôğ = " << sum << endl;
 
-	//3
-	int i;
-	int factorial = 1;
-	for (i = 2; i <= num; i++) {
-		factorial = factorial * i;
-	}
-	cout << "Ôàêòîğèàë = " << factorial << endl;
+    //2
+    int num;
+    num = secret_number;
 
-	//4
-	int p = 2;
-	bool flag = true;
-	while (p <= sqrt(num)&&flag) {
-		if (num % p == 0) flag = false;
-		p++;
-	}
-	if (num == 1) cout << "1  -íè ïğîñòîå, íè ñîñòàâíîå" << endl;
-	else if (flag) cout << "Ïğîñòîå" << endl;
-	else {
-		int q=1;
-		cout << "Ñîñòàâíîå" << endl;
-		while (q <= num / 2) {
-			q++;
-			if (num%q == 0) {
-				cout << "Äåëèòåëü:";
-				cout << q << endl;
-			}
-		}
-	}
+    int sum = 0;
+    while (secret_number != 0) {
+        sum = sum + (secret_number % 10);
+        secret_number = secret_number / 10;
+    }
+    cout << "Ğ¡ÑƒĞ¼Ğ¼Ğ° Ñ†Ğ¸Ñ„Ñ€ = " << sum << endl;
 
-	system("pause");
+    //3
+    int i;
+    int factorial = 1;
+    for (i = 2; i <= num; i++) {
+        factorial = factorial * i;
+    }
+    cout << "Ğ¤Ğ°ĞºÑ‚Ğ¾Ñ€Ğ¸Ğ°Ğ» = " << factorial << endl;
+
+    //4
+    int p = 2;
+    bool flag = true;
+    while (p <= sqrt(num) && flag) {
+        if (num % p == 0) flag = false;
+        p++;
+    }
+    if (num == 1) cout << "1  -Ğ½Ğ¸ Ğ¿Ñ€Ğ¾ÑÑ‚Ğ¾Ğµ, Ğ½Ğ¸ ÑĞ¾ÑÑ‚Ğ°Ğ²Ğ½Ğ¾Ğµ" << endl;
+    else if (flag) cout << "ĞŸÑ€Ğ¾ÑÑ‚Ğ¾Ğµ" << endl;
+    else {
+        int q = 1;
+        cout << "Ğ¡Ğ¾ÑÑ‚Ğ°Ğ²Ğ½Ğ¾Ğµ" << endl;
+        while (q <= num / 2) {
+            q++;
+            if (num % q == 0) {
+                cout << "Ğ”ĞµĞ»Ğ¸Ñ‚ĞµĞ»ÑŒ:";
+                cout << q << endl;
+            }
+        }
+    }
+
+    system("pause");
 }

@@ -1,40 +1,41 @@
 #include <iostream>
 
 using namespace std;
+
 int main()
 {
-	setlocale(LC_ALL, "rus");
-	int num;
-	cout << "Ââåäèòå íîìåð ìåñÿöà ";
-	cin >> num;
-	switch (num)
-	{
-	case 1: cout << "Çèìà" << endl;
-		break;
-	case 2: cout << "Çèìà" << endl;
-		break;
-	case 3: cout << "Âåñíà" << endl;
-		break;
-	case 4: cout << "Âåñíà" << endl;
-		break;
-	case 5: cout << "Âåñíà" << endl;
-		break;
-	case 6: cout << "Ëåòî" << endl;
-		break;
-	case 7: cout << "Ëåòî" << endl;
-		break;
-	case 8: cout << "Ëåòî" << endl;
-		break;
-	case 9: cout << "Îñåíü" << endl;
-		break;
-	case 10: cout << "Îñåíü" << endl;
-		break;
-	case 11: cout << "Îñåíü" << endl;
-		break;
-	case 12: cout << "Çèìà" << endl;
-		break;
-	default: cout << "Íåâåðíûé ââîä";
-	}
-	cout << endl;
-	system("pause");
+    setlocale(LC_ALL, ".UTF8");
+    int num;
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ð¼ÐµÑÑÑ†Ð° ";
+    cin >> num;
+    switch (num)
+    {
+    case 1: cout << "Ð—Ð¸Ð¼Ð°" << endl;
+        break;
+    case 2: cout << "Ð—Ð¸Ð¼Ð°" << endl;
+        break;
+    case 3: cout << "Ð’ÐµÑÐ½Ð°" << endl;
+        break;
+    case 4: cout << "Ð’ÐµÑÐ½Ð°" << endl;
+        break;
+    case 5: cout << "Ð’ÐµÑÐ½Ð°" << endl;
+        break;
+    case 6: cout << "Ð›ÐµÑ‚Ð¾" << endl;
+        break;
+    case 7: cout << "Ð›ÐµÑ‚Ð¾" << endl;
+        break;
+    case 8: cout << "Ð›ÐµÑ‚Ð¾" << endl;
+        break;
+    case 9: cout << "ÐžÑÐµÐ½ÑŒ" << endl;
+        break;
+    case 10: cout << "ÐžÑÐµÐ½ÑŒ" << endl;
+        break;
+    case 11: cout << "ÐžÑÐµÐ½ÑŒ" << endl;
+        break;
+    case 12: cout << "Ð—Ð¸Ð¼Ð°" << endl;
+        break;
+    default: cout << "ÐÐµÐ²ÐµÑ€Ð½Ñ‹Ð¹ Ð²Ð²Ð¾Ð´";
+    }
+    cout << endl;
+    system("pause");
 }

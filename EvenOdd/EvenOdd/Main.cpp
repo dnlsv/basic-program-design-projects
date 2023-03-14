@@ -1,19 +1,21 @@
 #include <iostream>
+
 using namespace std;
+
 int main()
 {
-	setlocale(LC_ALL, "rus");
-	int number;
-	cin >> number;
+    setlocale(LC_ALL, ".UTF8");
+    int number;
+    cin >> number;
 
-	if (number % 2 == 0)
-	{
-		cout << "×åòíîå" << endl;
-	}
-	else
-	{
-		cout << "Íå÷åòíîå" << endl;
-	}
-	system("pause");
-	return 0;
+    if (number % 2 == 0)
+    {
+        cout << "Ğ§ĞµÑ‚Ğ½Ğ¾Ğµ" << endl;
+    }
+    else
+    {
+        cout << "ĞĞµÑ‡ĞµÑ‚Ğ½Ğ¾Ğµ" << endl;
+    }
+    system("pause");
+    return 0;
 }

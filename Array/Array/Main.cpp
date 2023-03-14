@@ -3,81 +3,82 @@
 #include <ctime>
 
 using namespace std;
+
 const int N = 5;
 
 void main()
 {
-	setlocale(LC_ALL, "rus");
-	int arr[N];
-	srand(time(NULL));
-	int a, b;
-	cout << "Óêàæèòå èíòåðâàë" << endl;
-	cin >> a >> b;
-	cout << "Èíòåðâàë: [" << a << "," << b << "]" << endl;
-	for (int i = 0; i < N; i++) {
-		arr[i] = rand() % (b - a + 1) + a;
-	}
+    setlocale(LC_ALL, ".UTF8");
+    int arr[N];
+    srand(time(NULL));
+    int a, b;
+    cout << "Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð¸Ð½Ñ‚ÐµÑ€Ð²Ð°Ð»" << endl;
+    cin >> a >> b;
+    cout << "Ð˜Ð½Ñ‚ÐµÑ€Ð²Ð°Ð»: [" << a << "," << b << "]" << endl;
+    for (int i = 0; i < N; i++) {
+        arr[i] = rand() % (b - a + 1) + a;
+    }
 
-	cout << "Èñõîäíûé ìàññèâ:" << endl;
-	for (int i = 0; i < N; i++) {
-		cout << arr[i] << " ";
-	}
-	cout << endl;
-	
-	int max = a;
-	for (int i = 0; i < N; i++) {
-		if (arr[i] > max) {
-			max = arr[i];
-		}
-	}
-	cout << "Ìàêñèìàëüíûé ýëåìåíò ìàññèâà = " << max << endl;
-	
-	int min = b;
-	for (int i = 0; i < N; i++) {
-		if (arr[i] < min) {
-			min = arr[i];
-		}
-	}
-	cout << "Ìèíèìàëüíûé ýëåìåíò ìàññèâà = " << min << endl;
-	
-	int i, j, r;
-	cout << "Ïî âîçðàñòàíèþ:" << endl;
-	for (i = 0; i < N; i++) {
-		for (j = i + 1; j < N; j++) {
-			if (arr[i] > arr[j]) {
-				r = arr[i];
-				arr[i] = arr[j];
-				arr[j] = r;
-			}
-		}
-		cout << arr[i] << " ";
-	}
-	cout << endl;
-	
-	cout << "Ïî óáûâàíèþ:" << endl;
-	for (i = 0; i < N; i++) {
-		for (j = i + 1; j < N; j++) {
-			if (arr[i] < arr[j]) {
-				r = arr[i];
-				arr[i] = arr[j];
-				arr[j] = r;
-			}
-		}
-		cout << arr[i] << " ";
-	}
-	cout << endl;
-	
-	int kol = 0;
-	for (i = 0; i < N; i++) {
-		if (arr[i] % 2 != 0) {
-			arr[kol++] = arr[i];
-		}
-	}
-	cout << "Ìàññèâ áåç ÷åòíûõ ýëåìåíòîâ:" << endl;
-	for (i = 0; i < kol; i++) {
-		cout << arr[i] << " ";
-	}
-	cout << endl;
+    cout << "Ð˜ÑÑ…Ð¾Ð´Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð²:" << endl;
+    for (int i = 0; i < N; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
 
-	system("pause");
+    int max = a;
+    for (int i = 0; i < N; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¼Ð°ÑÑÐ¸Ð²Ð° = " << max << endl;
+
+    int min = b;
+    for (int i = 0; i < N; i++) {
+        if (arr[i] < min) {
+            min = arr[i];
+        }
+    }
+    cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¼Ð°ÑÑÐ¸Ð²Ð° = " << min << endl;
+
+    int i, j, r;
+    cout << "ÐŸÐ¾ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚Ð°Ð½Ð¸ÑŽ:" << endl;
+    for (i = 0; i < N; i++) {
+        for (j = i + 1; j < N; j++) {
+            if (arr[i] > arr[j]) {
+                r = arr[i];
+                arr[i] = arr[j];
+                arr[j] = r;
+            }
+        }
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    cout << "ÐŸÐ¾ ÑƒÐ±Ñ‹Ð²Ð°Ð½Ð¸ÑŽ:" << endl;
+    for (i = 0; i < N; i++) {
+        for (j = i + 1; j < N; j++) {
+            if (arr[i] < arr[j]) {
+                r = arr[i];
+                arr[i] = arr[j];
+                arr[j] = r;
+            }
+        }
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    int kol = 0;
+    for (i = 0; i < N; i++) {
+        if (arr[i] % 2 != 0) {
+            arr[kol++] = arr[i];
+        }
+    }
+    cout << "ÐœÐ°ÑÑÐ¸Ð² Ð±ÐµÐ· Ñ‡ÐµÑ‚Ð½Ñ‹Ñ… ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²:" << endl;
+    for (i = 0; i < kol; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    system("pause");
 }

@@ -3,16 +3,17 @@
 #include <ctime>
 
 using namespace std;
- void main()
+
+void main()
 {
-	setlocale(LC_ALL, "rus");
-	int guess;
-	srand(time(NULL)); 
-	int number = rand() % 11;
-	do {
-		cout << "Ââåäèòå ÷èñëî"<<endl;
-		cin >> guess;
-	} while (number != guess);
-	cout <<"Âû óãàäàëè!" << endl; 
-	system("pause");
+    setlocale(LC_ALL, ".UTF8");
+    int guess;
+    srand(time(NULL));
+    int number = rand() % 11;
+    do {
+        cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾" << endl;
+        cin >> guess;
+    } while (number != guess);
+    cout << "Ð’Ñ‹ ÑƒÐ³Ð°Ð´Ð°Ð»Ð¸!" << endl;
+    system("pause");
 }

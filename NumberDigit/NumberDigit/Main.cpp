@@ -1,19 +1,20 @@
 #include <iostream>
 
 using namespace std;
+
 int main()
 {
-	setlocale(LC_ALL, "rus");
+	setlocale(LC_ALL, ".UTF8");
 	int number;
 	int count = 1;
-	cout << "Ââåäè ÷èñëî = ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸ Ñ‡Ð¸ÑÐ»Ð¾ = ";
 	cin >> number;
 	while (number / 10 != 0)
 	{
 		number /= 10;
 		count++;
 	} 
-	cout << "Ðÿçðÿäíîñòü ÷èñëà = " << count << endl;
+	cout << "Ð ÑÐ·Ñ€ÑÐ´Ð½Ð¾ÑÑ‚ÑŒ Ñ‡Ð¸ÑÐ»Ð° = " << count << endl;
 	system("pause");
 	return 0;
 }
